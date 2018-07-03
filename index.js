@@ -57,7 +57,7 @@ function removeFromCart(item) {
 
 function placeOrder(ccNumber) {
   if (ccNumber) {
-    returnString = `Your total cost is $${total()}, which will be charged to the card ${ccNumber}.`
+    var returnString = `Your total cost is $${total()}, which will be charged to the card ${ccNumber}.`
     setCart([])
     return returnString
   } else {
